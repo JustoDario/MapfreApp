@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 0 72% 35%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 0 72% 35%;
+  --radius: 0.5rem;
+
+  /* Colores para actividades */
+  --green-100: 142 76% 95%;
+  --green-600: 142 76% 36%;
+  --blue-100: 217 91% 95%;
+  --blue-600: 217 91% 60%;
+  --purple-100: 270 76% 95%;
+  --purple-600: 270 76% 50%;
+  --orange-100: 30 96% 95%;
+  --orange-600: 30 96% 50%;
+  --pink-100: 330 87% 95%;
+  --pink-600: 330 87% 55%;
+  --gray-100: 220 14% 95%;
+  --gray-600: 220 14% 45%;
+  --red-100: 0 84% 95%;
+  --red-600: 0 84% 60%;
+}
+
+.dark {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 0 72% 50%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 0 72% 50%;
+}
+
+* {
+  @apply border-border;
+}
+
+body {
+  @apply bg-background text-foreground;
+}
+
+/* Clases para colores de actividades */
+.bg-green-100 {
+  background-color: hsl(var(--green-100));
+}
+.text-green-600 {
+  color: hsl(var(--green-600));
+}
+.bg-green-600 {
+  background-color: hsl(var(--green-600));
+}
+
+.bg-blue-100 {
+  background-color: hsl(var(--blue-100));
+}
+.text-blue-600 {
+  color: hsl(var(--blue-600));
+}
+.bg-blue-600 {
+  background-color: hsl(var(--blue-600));
+}
+
+.bg-purple-100 {
+  background-color: hsl(var(--purple-100));
+}
+.text-purple-600 {
+  color: hsl(var(--purple-600));
+}
+.bg-purple-600 {
+  background-color: hsl(var(--purple-600));
+}
+
+.bg-orange-100 {
+  background-color: hsl(var(--orange-100));
+}
+.text-orange-600 {
+  color: hsl(var(--orange-600));
+}
+.bg-orange-600 {
+  background-color: hsl(var(--orange-600));
+}
+
+.bg-pink-100 {
+  background-color: hsl(var(--pink-100));
+}
+.text-pink-600 {
+  color: hsl(var(--pink-600));
+}
+.bg-pink-600 {
+  background-color: hsl(var(--pink-600));
+}
+
+.bg-gray-100 {
+  background-color: hsl(var(--gray-100));
+}
+.text-gray-600 {
+  color: hsl(var(--gray-600));
+}
+.bg-gray-600 {
+  background-color: hsl(var(--gray-600));
+}
+
+.bg-red-100 {
+  background-color: hsl(var(--red-100));
+}
+.text-red-600 {
+  color: hsl(var(--red-600));
+}
+.bg-red-600 {
+  background-color: hsl(var(--red-600));
+}
+
+/* Estilos para el marcador del mapa */
+.custom-map-marker {
+  background: transparent;
+  border: none;
+}
+
+.custom-popup .leaflet-popup-content-wrapper {
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-popup .leaflet-popup-content {
+  margin: 0;
+  min-width: 200px;
+}
+
+.custom-popup .leaflet-popup-tip-container {
+  margin-top: -1px;
+}
+
